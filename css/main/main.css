@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5rem;
+}
+
+.container .header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.container .header .welcome {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.container .header .welcome h1 {
+  font-size: 4rem;
+}
+
+.container .header .welcome h1 #print {
+  font-weight: 400;
+}
+
+.container .header .welcome h1 #hack {
+  color: #113c9e;
+}
+
+.container .header .welcome h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.container .about {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .about .text .underline {
+  width: 5rem;
+  height: 0.5rem;
+  background-color: #c8c8c8;
+}
+
+.container .about .text h1 {
+  font-size: 2.5rem;
+}
+
+.container .about .text h1 span {
+  color: #113c9e;
+}
+
+.container .about .text #intro {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+  text-align: left;
+  color: #474747;
+}
+
+.container .about .text #main {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7d7d7d;
+}
+
+.container .about .image img {
+  width: 25rem;
+}
+
+.container .reach {
+  width: 100%;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(../../images/back.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../../images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.container .reach .text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.container .reach .button button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+}
+
+.container .events {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.container .events h1 {
+  font-size: 2.5rem;
+}
+
+.container .events .underline {
+  width: 5rem;
+  height: 0.5rem;
+  background-color: #c8c8c8;
+}
+
+.container .events p {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+  text-align: left;
+  color: #474747;
+}
+/*# sourceMappingURL=main.css.map */
