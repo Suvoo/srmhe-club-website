@@ -171,4 +171,81 @@ body {
   text-align: left;
   color: #474747;
 }
+
+@media (max-width: 810px) {
+  .container .header .welcome h1 {
+    font-size: 2rem;
+  }
+  .container .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .about .image {
+    text-align: center;
+  }
+  .container .about .image img {
+    width: 20rem;
+  }
+  .container .reach {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .reach .text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container .reach .button button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .container .header .welcome h1 {
+    font-size: 1.5rem;
+  }
+  .container .header .welcome h2 {
+    font-size: 1.2rem;
+  }
+  .container .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .about .text h1 {
+    font-size: 2rem;
+  }
+  .container .about .text #intro {
+    font-size: 1rem;
+  }
+  .container .about .text #main {
+    font-size: 0.8rem;
+  }
+  .container .about .image img {
+    width: 15rem;
+  }
+  .container .reach {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .reach .text h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container .reach .button button {
+    font-size: 0.6rem;
+  }
+  .container .events h1 {
+    font-size: 2rem;
+  }
+  .container .events p {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
