@@ -16,6 +16,7 @@
 
 .nav .logoImg {
     margin: auto 2rem;
+    margin-right: 0.5rem !important;
     width: 3rem;
     display: inline-block;
     vertical-align: middle;
@@ -35,23 +36,14 @@
     display: block;
     padding: 20px;
     text-decoration: none;
+    transition-property: transform, font-weight;
+    transition-duration: 0.2s;
+    color: #152d76;
 }
 
 .nav ul a:hover {
-    /* transform: scale(1.5); */
-    font-weight: bold;
-    animation-name: navHover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes navHover {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.5);
-    }
+    transform: scale(1.1);
+    font-weight: 600;
 }
 
 .nav ul li {
@@ -161,6 +153,10 @@
     .nav .menu-icon {
         display: none;
     }
+    .nav .logoTextWrapper .logoText {
+        font-size: 1rem;
+        margin-top: 1.8rem !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -169,5 +165,6 @@
     }
     .nav .logoTextWrapper .logoText {
         font-size: 1rem;
+        margin-top: 1.8rem !important;
     }
 }

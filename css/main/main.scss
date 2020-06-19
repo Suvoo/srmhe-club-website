@@ -14,14 +14,19 @@ body {
     .header {
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 85vh;
         .welcome {
             width: 100%;
             position: absolute;
             top: 30%;
             text-align: center;
+            #wlcm {
+                background-color: #ffffff;
+            }
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
+                width: fit-content;
+                margin: 0 auto;
                 #print {
                     font-weight: 400;
                 }
@@ -33,12 +38,32 @@ body {
                 font-size: 2rem;
                 font-weight: 300;
             }
+            .banner {
+                margin: 2rem auto;
+                margin-top: 8rem;
+                width: 45%;
+                padding: 1rem 0;
+                border-radius: 30px;
+                box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+                background-image: linear-gradient(121deg, #1705ca 9%, #152d76 63%);
+                color: #ffffff;
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.52;
+                    letter-spacing: normal;
+                    text-align: center;
+                }
+            }
         }
     }
 }
 
 .container {
     .about {
+        margin: 5rem auto !important;
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -77,6 +102,23 @@ body {
                 text-align: left;
                 color: #7d7d7d;
             }
+            button {
+                margin-top: 1rem;
+                border: none;
+                width: 8rem;
+                border-radius: 0.8em;
+                background-color: #1710b4;
+                padding: 0.5rem 1rem;
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                cursor: pointer;
+                outline: none;
+            }
         }
         .image {
             img {
@@ -100,6 +142,7 @@ body {
         background-attachment: fixed;
         color: #ffffff;
         .text {
+            width: 70%;
             h1 {
                 font-size: 2rem;
                 font-weight: 600;
@@ -154,6 +197,85 @@ body {
             text-align: left;
             color: #474747;
         }
+        .eventsCards {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            .event {
+                margin: 1rem 0.5rem;
+                width: 25%;
+                min-width: 290px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+                border-radius: 1rem;
+                transition: transform 0.5s;
+                img {
+                    width: 100%;
+                    border-top-right-radius: 1rem;
+                    border-top-left-radius: 1rem;
+                }
+                .caption {
+                    width: 100%;
+                    margin: 0.5rem 1rem;
+                    position: relative;
+                    .expand {
+                        cursor: pointer;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: 2rem;
+                        bottom: 2rem;
+                        border-radius: 100%;
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                        background-color: #ffffff;
+                        font-size: 1rem;
+                        color: #152d76;
+                    }
+                    h1 {
+                        width: fit-content;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.51;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #000000;
+                    }
+                    h2 {
+                        width: fit-content;
+                        font-size: 0.8rem;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.5;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        .events {
+            .eventsCards {
+                .event {
+                    min-width: 200px;
+                }
+            }
+        }
     }
 }
 
@@ -163,6 +285,12 @@ body {
             .welcome {
                 h1 {
                     font-size: 2rem;
+                }
+                .banner {
+                    width: 80%;
+                    h1 {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -182,8 +310,9 @@ body {
         .reach {
             flex-direction: column;
             .text {
+                width: auto;
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     text-align: center;
                 }
             }
@@ -191,6 +320,20 @@ body {
                 button {
                     font-size: 1rem;
                 }
+            }
+        }
+    }
+    .container {
+        .events {
+            .eventsCards {
+                flex-direction: column;
+                justify-content: center;
+                .event {
+                    min-width: 290px;
+                }
+            }
+            p {
+                font-size: 1.2rem;
             }
         }
     }
