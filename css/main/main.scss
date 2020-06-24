@@ -19,25 +19,39 @@ body {
             width: 100%;
             position: absolute;
             top: 30%;
-            text-align: center;
+            // text-align: center;
+            #cursor-output {
+                width: fit-content;
+                margin: 0 auto;
+                min-height: 8rem;
+                h1 {
+                    font-size: 3rem;
+                    width: fit-content;
+                }
+                p {
+                    font-size: 1rem;
+                    width: fit-content;
+                    // margin: 0 auto;
+                }
+            }
             #wlcm {
                 background-color: #ffffff;
             }
-            h1 {
-                font-size: 3rem;
-                width: fit-content;
-                margin: 0 auto;
-                #print {
-                    font-weight: 400;
-                }
-                #hack {
-                    color: #113c9e;
-                }
-            }
-            h2 {
-                font-size: 2rem;
-                font-weight: 300;
-            }
+            // h1 {
+            //     font-size: 3rem;
+            //     width: fit-content;
+            //     margin: 0 auto;
+            //     #print {
+            //         font-weight: 400;
+            //     }
+            //     #hack {
+            //         color: #113c9e;
+            //     }
+            // }
+            // h2 {
+            //     font-size: 2rem;
+            //     font-weight: 300;
+            // }
             .banner {
                 margin: 2rem auto;
                 margin-top: 8rem;
@@ -283,8 +297,19 @@ body {
     .container {
         .header {
             .welcome {
-                h1 {
-                    font-size: 2rem;
+                // h1 {
+                //     font-size: 2rem;
+                // }
+                #cursor-output {
+                    h1 {
+                        font-size: 1.2rem;
+                        width: fit-content;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                        width: fit-content;
+                        // margin: 0 auto;
+                    }
                 }
                 .banner {
                     width: 80%;
