@@ -28,6 +28,7 @@ body {
   width: fit-content;
   margin: 0 auto;
   min-height: 8rem;
+  background-color: #ffffff;
 }
 
 .container .header .welcome #cursor-output h1 {
@@ -35,6 +36,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 1rem;
 }
 
 .container .header .welcome #cursor-output p {
@@ -42,6 +44,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 1rem;
 }
 
 .container .header .welcome #wlcm {
