@@ -19,24 +19,24 @@ body {
             width: 100%;
             position: absolute;
             top: 30%;
-            text-align: center;
-            #wlcm {
-                background-color: #ffffff;
-            }
-            h1 {
-                font-size: 3rem;
+            #cursor-output {
                 width: fit-content;
                 margin: 0 auto;
-                #print {
-                    font-weight: 400;
+                min-height: 8rem;
+                background-color: #ffffff;
+                h1 {
+                    font-size: 3rem;
+                    width: fit-content;
+                    margin: 0 1rem;
                 }
-                #hack {
-                    color: #113c9e;
+                p {
+                    font-size: 1rem;
+                    width: fit-content;
+                    margin: 0 1rem;
                 }
             }
-            h2 {
-                font-size: 2rem;
-                font-weight: 300;
+            #wlcm {
+                background-color: #ffffff;
             }
             .banner {
                 margin: 2rem auto;
@@ -283,8 +283,15 @@ body {
     .container {
         .header {
             .welcome {
-                h1 {
-                    font-size: 2rem;
+                #cursor-output {
+                    h1 {
+                        font-size: 1.2rem;
+                        width: fit-content;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                        width: fit-content;
+                    }
                 }
                 .banner {
                     width: 80%;
