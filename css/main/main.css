@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
@@ -332,13 +336,165 @@ body {
   color: #666666;
 }
 
+.container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
+}
+
+.container .footer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footer .top .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+  margin-left: 4.8rem;
+}
+
+.container .footer .top .footer-text h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.container .footer .top .footer-text p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.container .footer .top .footer-text .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 30%;
+  margin-top: 4rem;
+}
+
+.container .footer .top .footer-text .social .socialicons {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+.container .footer .top .footer-text .social .socialicons a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+.container .footer .top .footer-text .social .socialicons a .fa-instagram {
+  background: linear-gradient(133deg, #ff43cd 10%, #7d06c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .footer .top .footer-text .social .socialicons a .fa-facebook {
+  color: #3100d8;
+}
+
+.container .footer .top .footer-text .social .socialicons a .fa-linkedin {
+  color: #006eff;
+}
+
+.container .footer .top .footer-text .social .socialicons a .fa-twitter {
+  color: #00e0e0;
+}
+
+.container .footer .top .footer-img {
+  margin: 1rem 0;
+  margin-right: 4.8rem;
+}
+
+.container .footer .top .footer-img img {
+  max-width: 20rem;
+}
+
+.container .footer .bottom {
+  background-color: #f1f1f1;
+}
+
+.container .footer .bottom h1 {
+  margin: 1rem 4.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.container .footer .bottom .fa-heart {
+  color: #ff0000;
+}
+
 @media (max-width: 1000px) {
   .container .events .eventsCards .event {
     min-width: 200px;
   }
+  .container .footer .top .footer-text .social {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 810px) {
+  .container .header .welcome #cursor-output {
+    min-height: 4rem;
+  }
   .container .header .welcome #cursor-output h1 {
     font-size: 1.2rem;
     width: -webkit-fit-content;
@@ -399,6 +555,29 @@ body {
   }
   .container .events p {
     font-size: 1.2rem;
+  }
+  .container .footer .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .footer .top .footer-text {
+    margin-left: 1rem;
+  }
+  .container .footer .top .footer-text .social {
+    max-width: 50%;
+    min-width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .container .footer .top .footer-img {
+    margin: 1rem auto;
+  }
+  .container .footer .bottom h1 {
+    margin: 1rem auto;
+    text-align: center;
   }
 }
 

@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
@@ -267,12 +271,123 @@ body {
     }
 }
 
+.container {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .footer-text {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem 0;
+                margin-left: 4.8rem;
+                h1 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.53;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #000000;
+                }
+                p {
+                    font-size: 0.8rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #000000;
+                }
+                .social {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    max-width: 30%;
+                    margin-top: 4rem;
+                    .socialicons {
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        border-radius: 100%;
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        a {
+                            text-decoration: none;
+                            outline: none;
+                            color: inherit;
+                            .fa-instagram {
+                                background: linear-gradient(133deg, #ff43cd 10%, #7d06c2);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                            .fa-facebook {
+                                color: #3100d8;
+                            }
+                            .fa-linkedin {
+                                color: #006eff;
+                            }
+                            .fa-twitter {
+                                color: #00e0e0;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-img {
+                margin: 1rem 0;
+                margin-right: 4.8rem;
+                img {
+                    max-width: 20rem;
+                }
+            }
+        }
+        .bottom {
+            background-color: #f1f1f1;
+            h1 {
+                margin: 1rem 4.8rem;
+                font-size: 0.8rem;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.48;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
+            .fa-heart {
+                color: #ff0000;
+            }
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .container {
         .events {
             .eventsCards {
                 .event {
                     min-width: 200px;
+                }
+            }
+        }
+    }
+    .container {
+        .footer {
+            .top {
+                .footer-text {
+                    .social {
+                        max-width: 50%;
+                    }
                 }
             }
         }
@@ -284,6 +399,7 @@ body {
         .header {
             .welcome {
                 #cursor-output {
+                    min-height: 4rem;
                     h1 {
                         font-size: 1.2rem;
                         width: fit-content;
@@ -341,6 +457,30 @@ body {
             }
             p {
                 font-size: 1.2rem;
+            }
+        }
+    }
+    .container {
+        .footer {
+            .top {
+                flex-direction: column;
+                .footer-text {
+                    margin-left: 1rem;
+                    .social {
+                        max-width: 50%;
+                        min-width: 50%;
+                        align-self: center;
+                    }
+                }
+                .footer-img {
+                    margin: 1rem auto;
+                }
+            }
+            .bottom {
+                h1 {
+                    margin: 1rem auto;
+                    text-align: center;
+                }
             }
         }
     }
