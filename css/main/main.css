@@ -10,7 +10,7 @@ html {
 
 body {
   font-size: 62.5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 5rem;
 }
 
@@ -253,6 +253,7 @@ body {
 }
 
 .container .events .eventsCards .event {
+  cursor: pointer;
   margin: 1rem 0.5rem;
   width: 25%;
   min-width: 290px;
