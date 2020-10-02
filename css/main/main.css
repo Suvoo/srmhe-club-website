@@ -128,22 +128,41 @@ body {
   color: #7d7d7d;
 }
 
-.container .about .text button {
+.container .about .text .poweredWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 1rem;
-  border: none;
-  width: 8rem;
-  border-radius: 0.8em;
-  background-color: #1710b4;
-  padding: 0.5rem 1rem;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  cursor: pointer;
-  outline: none;
+}
+
+.container .about .text .poweredWrapper .powered {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .about .text .poweredWrapper .powered img {
+  width: 80%;
+}
+
+.container .about .text .poweredWrapper #hackclub img {
+  width: 60%;
+}
+
+.container .about .text .poweredWrapper #coding img {
+  width: 70%;
+  margin-right: auto;
 }
 
 .container .about .image img {
@@ -490,6 +509,20 @@ body {
   .container .footer .top .footer-text .social {
     max-width: 50%;
   }
+  .container .about .text .poweredWrapper {
+    margin-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .about .text .poweredWrapper .powered {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  .container .about .text .poweredWrapper #coding img {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 810px) {
@@ -579,6 +612,16 @@ body {
   .container .footer .bottom h1 {
     margin: 1rem auto;
     text-align: center;
+  }
+  .container .about .text .poweredWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .about .text .poweredWrapper .powered {
+    width: 80%;
+    margin: 0.5rem auto;
   }
 }
 
