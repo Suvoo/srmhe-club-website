@@ -106,22 +106,30 @@ body {
                 text-align: left;
                 color: #7d7d7d;
             }
-            button {
+            .poweredWrapper {
+                display: flex;
+                flex-direction: row;
                 margin-top: 1rem;
-                border: none;
-                width: 8rem;
-                border-radius: 0.8em;
-                background-color: #1710b4;
-                padding: 0.5rem 1rem;
-                color: #ffffff;
-                font-size: 1rem;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.5;
-                letter-spacing: normal;
-                cursor: pointer;
-                outline: none;
+                .powered {
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 80%;
+                    }
+                }
+                #hackclub {
+                    img {
+                        width: 60%;
+                    }
+                }
+                #coding {
+                    img {
+                        width: 70%;
+                        margin-right: auto;
+                    }
+                }
             }
         }
         .image {
@@ -393,6 +401,25 @@ body {
             }
         }
     }
+    .container {
+        .about {
+            .text {
+                .poweredWrapper {
+                    margin-top: 0;
+                    flex-direction: column;
+                    .powered {
+                        width: 80%;
+                        margin: 0.5rem auto;
+                    }
+                    #coding {
+                        img {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 810px) {
@@ -481,6 +508,19 @@ body {
                 h1 {
                     margin: 1rem auto;
                     text-align: center;
+                }
+            }
+        }
+    }
+    .container {
+        .about {
+            .text {
+                .poweredWrapper {
+                    flex-direction: column;
+                    .powered {
+                        width: 80%;
+                        margin: 0.5rem auto;
+                    }
                 }
             }
         }
